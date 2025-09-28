@@ -109,7 +109,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   Navigation:
-  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
