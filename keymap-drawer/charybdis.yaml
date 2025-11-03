@@ -233,8 +233,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -343,3 +343,5 @@ combos:
   k: Ctl+Sft+R
 - p: [13, 14]
   k: Ctl+F
+- p: [16, 17]
+  k: Scroll
