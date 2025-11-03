@@ -3,6 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NUFU 1
@@ -99,6 +100,11 @@
         find {
             bindings = <&kp LC(F)>;
             key-positions = <13 14>;
+        };
+
+        scroll {
+            bindings = <&mo 6>;
+            key-positions = <16 17>;
         };
     };
 
