@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/petejohanson
     - name: inorichi
       url-base: https://github.com/inorichi
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
