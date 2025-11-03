@@ -271,8 +271,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -345,3 +345,5 @@ combos:
   k: Ctl+F
 - p: [16, 17]
   k: Scroll
+- p: [18, 19]
+  k: Sniper
