@@ -1,5 +1,5 @@
 compatible: "pixart,pmw3610"
-
+description: "PixArt PMW3610 optical motion sensor binding for ZMK/Zephyr"
 properties:
   input-processors:
     type: phandle-array
