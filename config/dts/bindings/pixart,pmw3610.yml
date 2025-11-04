@@ -1,3 +1,0 @@
-include: zmk,pointer-device.yaml
-
-compatible: "pixart,pmw3610"
