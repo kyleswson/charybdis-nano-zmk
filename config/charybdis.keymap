@@ -8,13 +8,14 @@
 #include <behaviors/num_word.dtsi>
 
 #define BASE 0
-#define NUFU 1
-#define SYM 2
-#define NAV 3
-#define MED 4
+#define NAV 1
+#define NUM 2
+#define SYM 3
+#define FUN 4
 #define POI 5
 #define SCR 6
 #define SNI 7
+#define RGHT 8
 
 &sl { release-after-ms = <250>; };
 
