@@ -1,5 +1,5 @@
-# config/dts/bindings/pixart,pmw3610.yml
 
+description: Pixart PMW3610 trackball sensor driver (ZMK Custom Auto-Layer)
 compatible: "pixart,pmw3610"
 
 properties:
