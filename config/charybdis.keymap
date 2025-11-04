@@ -1,11 +1,12 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
 #include "includes/settings.dtsi"
 #include "includes/behaviours_homerow_mods.dtsi"
 #include <behaviors/num_word.dtsi>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NAV 1
@@ -54,6 +55,56 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <125>;
             hold-trigger-on-release;
+        };
+
+        right_bracket: right_bracket {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RIGHT_BRACKET";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RIGHT_PARENTHESIS>,
+                <&kp RIGHT_BRACE>,
+                <&kp RIGHT_BRACKET>;
+        };
+
+        small_bracket: small_bracket {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SMALL_BRACKET";
+            bindings = <&left_right_brackets>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
+
+        mid_bracket: mid_bracket {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MID_BRACKET";
+            bindings = <&left_right_brackets_2>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
+
+        large_bracket: large_bracket {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LARGE_BRACKET";
+            bindings = <&left_right_brackets_3>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
+
+        brackets: brackets {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BRACKETS";
+            #binding-cells = <0>;
+            bindings =
+                <&small_bracket 0 LEFT_PARENTHESIS>,
+                <&mid_bracket 0 LEFT_BRACE>,
+                <&large_bracket 0 LEFT_BRACKET>;
         };
     };
 
@@ -114,6 +165,34 @@
             bindings = <&mo 7>;
             key-positions = <18 19>;
         };
+
+        numword {
+            bindings = <&tog 2>;
+            key-positions = <10 30>;
+        };
+    };
+
+    macros {
+        left_right_brackets: left_right_brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "LEFT_RIGHT_BRACKETS";
+        };
+
+        left_right_brackets_2: left_right_brackets_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "LEFT_RIGHT_BRACKETS_2";
+        };
+
+        left_right_brackets_3: left_right_brackets_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "LEFT_RIGHT_BRACKETS_3";
+        };
     };
 
     keymap {
@@ -122,10 +201,10 @@
         Base {
             label = "Base";
             bindings = <
-  &kp Q            &kp W        &kp E            &kp R         &kp T    &kp Y      &kp U         &kp I         &kp O        &kp P
-  &lt 1 A          &hm_l LALT S  &hm_shift_l LSHFT D     &hm_l LCTRL F  &kp G    &kp H      &hm_r LCTRL J  &hm_shift_r LSHFT K  &hm_r RALT L  &hm_r RGUI SEMICOLON
-  &hm_l LEFT_GUI Z  &kp X        &kp C            &kp V         &kp B    &kp N      &kp M         &kp COMMA     &kp DOT      &lt 0 SLASH
-                                &lt 2 BACKSPACE  &lt 3 DELETE  &sl 4    &kp ENTER  &lt 3 SPACE
+  &kp Q             &kp W         &kp E                &kp R          &kp T    &kp Y      &kp U          &kp I                &kp O         &kp P
+  &lt 1 A           &hm_l LALT S  &hm_shift_l LSHFT D  &hm_l LCTRL F  &kp G    &kp H      &hm_r LCTRL J  &hm_shift_r LSHFT K  &hm_r RALT L  &hm_r RGUI SEMICOLON
+  &hm_l LEFT_GUI Z  &kp X         &kp C                &kp V          &kp B    &kp N      &kp M          &kp COMMA            &kp DOT       &kp SLASH
+                                  &lt 2 BACKSPACE      &lt 3 DELETE   &sl 4    &kp ENTER  &lt 3 SPACE
             >;
         };
 
@@ -152,9 +231,9 @@
         Symbol {
             label = "Symbol";
             bindings = <
-  &kp N1        &kp N2      &kp N3         &kp N4          &kp N5           &kp N6         &kp N7        &kp N8        &kp N9        &kp N0
-  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)    &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)
-  &kp TILDE     &kp GRAVE   &trans         &kp UNDERSCORE  &kp EQUAL        &trans         &trans        &trans        &trans        &trans
+  &kp N1        &kp N2      &kp N3         &kp N4          &kp N5           &kp N6         &kp N7        &kp N8          &kp N9        &kp N0
+  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)    &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)    &kp LS(LPAR)  &kp LS(RPAR)
+  &kp TILDE     &kp GRAVE   &brackets      &kp UNDERSCORE  &kp EQUAL        &trans         &trans        &right_bracket  &trans        &trans
                             &trans         &trans          &trans           &trans         &trans
             >;
         };
