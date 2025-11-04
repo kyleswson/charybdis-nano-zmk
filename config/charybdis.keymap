@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include "includes/settings.dtsi"
 #include "includes/behaviours_homerow_mods.dtsi"
+#include <behaviors/num_word.dtsi>
 
 #define BASE 0
 #define NUFU 1
