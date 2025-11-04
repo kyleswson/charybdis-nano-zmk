@@ -1,20 +1,6 @@
-
-description: Pixart PMW3610 trackball sensor (Overridden for Auto-Layer)
 compatible: "pixart,pmw3610"
 
-include: spi-device.yaml
-
 properties:
-  irq-gpios:
-    type: phandle-array
-    required: true
-  scroll-layers:
-    type: array
-    default: []
-  snipe-layers:
-    type: array
-    default: []
-    
   input-processors:
     type: phandle-array
     description: Input processor nodes associated with this input device.
