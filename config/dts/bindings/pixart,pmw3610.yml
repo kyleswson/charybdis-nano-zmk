@@ -1,0 +1,9 @@
+# config/dts/bindings/pixart,pmw3610.yml
+
+compatible: "pixart,pmw3610"
+
+properties:
+  input-processors:
+    type: phandle-array
+    description: Input processor nodes associated with this input device.
+    required: false
