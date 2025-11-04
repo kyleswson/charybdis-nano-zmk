@@ -167,7 +167,7 @@
         };
 
         numword {
-            bindings = <&tog 2>;
+            bindings = <&num_word 2>;
             key-positions = <10 30>;
         };
     };
