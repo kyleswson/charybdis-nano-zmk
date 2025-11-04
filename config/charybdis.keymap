@@ -6,6 +6,7 @@
 #include "includes/settings.dtsi"
 #include "includes/behaviours_homerow_mods.dtsi"
 #include <behaviors/num_word.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 #define BASE 0
 #define NAV 1
@@ -192,6 +193,12 @@
             bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
             label = "LEFT_RIGHT_BRACKETS_3";
         };
+    };
+
+    zip_mouse_layer: zip_mouse_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        excluded-positions = <30 31 32 33 34>;
     };
 
     keymap {
