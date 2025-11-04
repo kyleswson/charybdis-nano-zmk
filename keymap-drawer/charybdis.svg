@@ -278,9 +278,7 @@ path.combo {
 <g transform="translate(700, 172)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">/</text>
-<a href="#Base">
-<text x="0" y="24" class="key hold layer-activator">Base</text>
-</a></g>
+</g>
 <g transform="translate(167, 203)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:backspace"/>
@@ -371,6 +369,14 @@ path.combo {
 <a href="#Sniper">
 <text x="672" y="104" class="combo tap layer-activator">Sniper</text>
 </a></g>
+<g class="combo combopos-11">
+<path d="M97,160 l-54,-34" class="combo"/>
+<path d="M97,160 l54,34" class="combo"/>
+<rect rx="6" ry="6" x="83" y="147" width="28" height="26" class="combo"/>
+<text x="97" y="160" class="combo tap">
+<tspan x="97" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="97" dy="1.2em" style="font-size: 78%">2</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 329)" class="layer-Navigation">
@@ -586,6 +592,14 @@ path.combo {
 <a href="#Sniper">
 <text x="672" y="104" class="combo tap layer-activator">Sniper</text>
 </a></g>
+<g class="combo combopos-11">
+<path d="M97,160 l-54,-34" class="combo"/>
+<path d="M97,160 l54,34" class="combo"/>
+<rect rx="6" ry="6" x="83" y="147" width="28" height="26" class="combo"/>
+<text x="97" y="160" class="combo tap">
+<tspan x="97" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="97" dy="1.2em" style="font-size: 78%">2</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 659)" class="layer-Num">
@@ -792,6 +806,14 @@ path.combo {
 <a href="#Sniper">
 <text x="672" y="104" class="combo tap layer-activator">Sniper</text>
 </a></g>
+<g class="combo combopos-11">
+<path d="M97,160 l-54,-34" class="combo"/>
+<path d="M97,160 l54,34" class="combo"/>
+<rect rx="6" ry="6" x="83" y="147" width="28" height="26" class="combo"/>
+<text x="97" y="160" class="combo tap">
+<tspan x="97" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="97" dy="1.2em" style="font-size: 78%">2</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 988)" class="layer-Symbol">
@@ -885,9 +907,9 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">`</text>
 </g>
-<g transform="translate(140, 140)" class="key trans keypos-22">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(140, 140)" class="key keypos-22">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;brackets</tspan></text>
 </g>
 <g transform="translate(196, 147)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -905,9 +927,9 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(588, 140)" class="key trans keypos-27">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(588, 140)" class="key keypos-27">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;right_bra…</tspan></text>
 </g>
 <g transform="translate(644, 147)" class="key trans keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -998,6 +1020,14 @@ path.combo {
 <a href="#Sniper">
 <text x="672" y="104" class="combo tap layer-activator">Sniper</text>
 </a></g>
+<g class="combo combopos-11">
+<path d="M97,160 l-54,-34" class="combo"/>
+<path d="M97,160 l54,34" class="combo"/>
+<rect rx="6" ry="6" x="83" y="147" width="28" height="26" class="combo"/>
+<text x="97" y="160" class="combo tap">
+<tspan x="97" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="97" dy="1.2em" style="font-size: 78%">2</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1317)" class="layer-Function">
@@ -1216,6 +1246,14 @@ path.combo {
 <a href="#Sniper">
 <text x="672" y="104" class="combo tap layer-activator">Sniper</text>
 </a></g>
+<g class="combo combopos-11">
+<path d="M97,160 l-54,-34" class="combo"/>
+<path d="M97,160 l54,34" class="combo"/>
+<rect rx="6" ry="6" x="83" y="147" width="28" height="26" class="combo"/>
+<text x="97" y="160" class="combo tap">
+<tspan x="97" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="97" dy="1.2em" style="font-size: 78%">2</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1646)" class="layer-Mouse">
@@ -1433,6 +1471,14 @@ path.combo {
 <a href="#Sniper">
 <text x="672" y="104" class="combo tap layer-activator">Sniper</text>
 </a></g>
+<g class="combo combopos-11">
+<path d="M97,160 l-54,-34" class="combo"/>
+<path d="M97,160 l54,34" class="combo"/>
+<rect rx="6" ry="6" x="83" y="147" width="28" height="26" class="combo"/>
+<text x="97" y="160" class="combo tap">
+<tspan x="97" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="97" dy="1.2em" style="font-size: 78%">2</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1976)" class="layer-Scroll">
@@ -1638,6 +1684,14 @@ path.combo {
 <a href="#Sniper">
 <text x="672" y="104" class="combo tap layer-activator">Sniper</text>
 </a></g>
+<g class="combo combopos-11">
+<path d="M97,160 l-54,-34" class="combo"/>
+<path d="M97,160 l54,34" class="combo"/>
+<rect rx="6" ry="6" x="83" y="147" width="28" height="26" class="combo"/>
+<text x="97" y="160" class="combo tap">
+<tspan x="97" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="97" dy="1.2em" style="font-size: 78%">2</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 2305)" class="layer-Sniper">
@@ -1843,6 +1897,14 @@ path.combo {
 <a href="#Sniper">
 <text x="672" y="104" class="combo tap layer-activator">Sniper</text>
 </a></g>
+<g class="combo combopos-11">
+<path d="M97,160 l-54,-34" class="combo"/>
+<path d="M97,160 l54,34" class="combo"/>
+<rect rx="6" ry="6" x="83" y="147" width="28" height="26" class="combo"/>
+<text x="97" y="160" class="combo tap">
+<tspan x="97" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="97" dy="1.2em" style="font-size: 78%">2</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 2634)" class="layer-RGHT">
@@ -2059,6 +2121,14 @@ path.combo {
 <a href="#Sniper">
 <text x="672" y="104" class="combo tap layer-activator">Sniper</text>
 </a></g>
+<g class="combo combopos-11">
+<path d="M97,160 l-54,-34" class="combo"/>
+<path d="M97,160 l54,34" class="combo"/>
+<rect rx="6" ry="6" x="83" y="147" width="28" height="26" class="combo"/>
+<text x="97" y="160" class="combo tap">
+<tspan x="97" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="97" dy="1.2em" style="font-size: 78%">2</tspan>
+</text>
+</g>
 </g>
 </g>
 </svg>
