@@ -61,6 +61,7 @@
         automouse-layer = <5>;
         scroll-layers = <6>;
         snipe-layers = <7>;
+		input-processors = <&zip_mouse_layer 5 3000>;
     };
 };
 
@@ -71,6 +72,7 @@
 
   };
 };
+
 
 
 
