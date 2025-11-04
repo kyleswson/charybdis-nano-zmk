@@ -14,5 +14,8 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: inorichi
       revision: main
+    - name: zmk-auto-layer
+      remote: urob
+      revision: main # set to same version as zmk above
   self:
     path: config
