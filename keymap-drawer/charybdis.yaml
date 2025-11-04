@@ -30,7 +30,7 @@ layers:
   - M
   - ','
   - .
-  - {t: /, h: Base}
+  - /
   - {t: '$$mdi:backspace$$', h: Num}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Symbol}
   - {t: Function, h: sticky}
@@ -131,12 +131,12 @@ layers:
   - Sft+)
   - '~'
   - '`'
-  - {t: ▽, type: trans}
+  - '&brackets'
   - _
   - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&right_bracket'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -347,3 +347,5 @@ combos:
   k: Scroll
 - p: [18, 19]
   k: Sniper
+- p: [10, 30]
+  k: {t: Num, h: toggle}
