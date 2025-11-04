@@ -348,4 +348,4 @@ combos:
 - p: [18, 19]
   k: Sniper
 - p: [10, 30]
-  k: {t: Num, h: toggle}
+  k: '&num_word 2'
