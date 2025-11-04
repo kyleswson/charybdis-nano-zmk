@@ -3,8 +3,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <input/processors.dtsi>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 #define BASE 0
 #define NUFU 1
@@ -112,13 +110,6 @@
             bindings = <&mo 7>;
             key-positions = <18 19>;
         };
-    };
-
-    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-        require-prior-idle-ms = <500>;
-        excluded-positions = <30 31 32 33 34>;
     };
 
     keymap {
