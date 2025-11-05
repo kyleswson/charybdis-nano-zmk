@@ -230,9 +230,7 @@
         type = <INPUT_EV_REL>;
         map =
             <INPUT_REL_X INPUT_REL_HWHEEL>,
-            // X 이동 -> 수평 휠,
             <INPUT_REL_Y INPUT_REL_WHEEL>;
-  // Y 이동 -> 세로 휠
     };
 
     zip_temp_layer: zip_temp_layer {
