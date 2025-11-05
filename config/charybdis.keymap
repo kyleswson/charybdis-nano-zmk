@@ -233,6 +233,11 @@
             <INPUT_REL_Y INPUT_REL_WHEEL>;
     };
 
+    zip_xy_to_scroll_mapper: zip_xy_to_scroll_mapper {
+        compatible = "zmk,input-processor-zip-scroll";
+        #input-processor-cells = <2>;
+    };
+
     zip_temp_layer: zip_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
@@ -248,14 +253,10 @@
         scroll {
             layers = <6>;
             input-processors =
-                <&xy_transf (INPUT_TRANSFORM_Y_INVERT)>,
-                <&xy_scaler 1 25>,
-                <&x_scaler 0 1>,
-                <&to_wheel>;
+                <&zip_xy_to_scroll_mapper 10 25>;
         };
 
         auto_layer {
-            layers = <0>;
             input-processors = <&zip_temp_layer 5 3000>;
         };
     };
