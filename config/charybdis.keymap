@@ -225,10 +225,28 @@
             , <INPUT_REL_Y INPUT_REL_WHEEL>;  // Y 이동 -> 세로 휠
     };
 
-    zip_mouse_layer: zip_mouse_layer {
+    zip_temp_layer: zip_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
         excluded-positions = <30 31 32 33 34>;
+    };
+
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>; 
+        input-processors = <&zip_zxy>, <&zip_report_rate_limit 8>; 
+        scroll {
+            layers = <6>;
+            process-next;
+            input-processors = <&xy_transf (INPUT_TRANSFORM_Y_INVERT)>
+                             , <&xy_scaler 1 25>, <&x_scaler 0 1>
+                             , <&to_wheel>;
+        };
+        auto_layer {
+            layers = <0>; 
+            process-next;
+            input-processors = <&zip_temp_layer 5 3000>;
+        };
     };
 
     keymap {
