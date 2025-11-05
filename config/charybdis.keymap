@@ -237,14 +237,12 @@
         device = <&trackball>; 
         scroll {
             layers = <6>;
-            process-next;
             input-processors = <&xy_transf (INPUT_TRANSFORM_Y_INVERT)>
                              , <&xy_scaler 1 25>, <&x_scaler 0 1>
                              , <&to_wheel>;
         };
         auto_layer {
             layers = <0>; 
-            process-next;
             input-processors = <&zip_temp_layer 5 3000>;
         };
     };
