@@ -6,6 +6,7 @@
 #include "includes/settings.dtsi"
 #include "includes/behaviours_homerow_mods.dtsi"
 #include <behaviors/num_word.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 
 #define BASE 0
 #define NAV 1
