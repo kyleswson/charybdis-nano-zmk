@@ -232,6 +232,7 @@
         excluded-positions = <30 31 32 33 34>;
     };
 
+#if defined(ZMK_KEYBOARD_NAME) && (ZMK_KEYBOARD_NAME == charybdis_right)
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>; 
@@ -246,6 +247,7 @@
             input-processors = <&zip_temp_layer 5 3000>;
         };
     };
+#endif
 
     keymap {
         compatible = "zmk,keymap";
