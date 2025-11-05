@@ -235,7 +235,7 @@
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>; 
-        input-processors = <&zip_zxy>, <&zip_report_rate_limit 8>; 
+        input-processors = <&zip_report_rate_limit 8>; 
         scroll {
             layers = <6>;
             process-next;
