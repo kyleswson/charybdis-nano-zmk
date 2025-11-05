@@ -5,7 +5,9 @@
  */
  
 #include "charybdis.dtsi"
-// #include <input/processors.dtsi>
+#include <input/processors.dtsi>
+#include <input/processors/report_rate_limit.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 
 &default_transform {
 	col-offset = <6>;
@@ -69,7 +71,7 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
 
-        force-awake;
+        // force-awake;
         /* keep the sensor awake while ZMK activity state is ACTIVE,
            fallback to normal downshift mode after ZMK goes into IDLE / SLEEP mode.
            thus, the sensor would be a `wakeup-source` */
@@ -78,20 +80,28 @@
         /* while force-awake is acitvated, enable this mode to force sampling per 
            4ms, where the default sampling rate is 8ms. */
         /* NOTE: apply this mode if you need 250Hz with direct USB connection. */
+		force-high-performance;
     };
 };
 
 / {
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-  };
+  trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors =
+            <&zip_ble_report_rate_limit 8>, // from badjeff's https://github.com/badjeff/zmk-input-processor-report-rate-limit/blob/main/dts/input/processors/report_rate_limit.dtsi
+            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>;
+
+        scroll {
+            layers = <6>;
+            input-processors =
+    		<&zip_xy_scaler 1 16>,
+          	<&zip_xy_to_scroll_mapper>;
+        };
+
+        auto_layer {
+            layers = <0>, <1>, <2>, <3>;
+            input-processors = <&zip_temp_layer 5 3000>;
+        };
+    };
 };
-
-
-
-
-
-
-
-
