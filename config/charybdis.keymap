@@ -135,7 +135,7 @@
         numword_stickylayer: numword_stickylayer {
             compatible = "zmk,behavior-hold-tap";
             label = "NUMWORD_STICKYLAYER";
-            bindings = <&num_word 2>, <&mid_bracket>;
+            bindings = <&num_word>, <&mid_bracket>;
 
             #binding-cells = <2>;
             tapping-term-ms = <300>;
@@ -288,7 +288,7 @@
   &kp Q             &kp W         &kp E                &kp R          &kp T                       &kp Y        &kp U          &kp I                &kp O          &kp P
   &lt 1 A           &hm_l LALT S  &hm_shift_l LSHFT D  &hm_l LCTRL F  &kp G                       &kp H        &hm_r LCTRL J  &hm_shift_r LSHFT K  &hm_r RALT L   &lt 1 SQT
   &hm_l LEFT_GUI Z  &kp X         &kp C                &kp V          &kp B                       &kp N        &kp M          &comma_semicolon     &period_colon  &hm_r RGUI SLASH
-                                  &lt 2 BACKSPACE      &lt 3 DELETE   &numword_stickylayer 4 0    &lt 3 ENTER  &lt 2 SPACE
+                                  &lt 2 BACKSPACE      &lt 3 DELETE   &numword_stickylayer 4 2    &lt 3 ENTER  &lt 2 SPACE
             >;
         };
 
