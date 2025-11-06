@@ -235,7 +235,7 @@
 
     zip_xy_to_scroll_mapper: zip_xy_to_scroll_mapper {
         compatible = "zmk,input-processor-zip-scroll";
-        #input-processor-cells = <2>;
+        #input-processor-cells = <0>;
     };
 
     zip_temp_layer: zip_temp_layer {
