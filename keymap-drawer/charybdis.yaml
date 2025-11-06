@@ -28,8 +28,8 @@ layers:
   - B
   - N
   - M
-  - ','
-  - .
+  - '&comma_semicolon'
+  - '&period_colon'
   - /
   - {t: '$$mdi:backspace$$', h: Num}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Symbol}
@@ -138,7 +138,7 @@ layers:
   - {t: ▽, type: trans}
   - '&right_bracket'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''''
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -149,8 +149,8 @@ layers:
   - F7
   - F8
   - F9
-  - BT CLR
-  - BT CLR
+  - {h: BT CLR}
+  - {h: BT CLR}
   - F7
   - F8
   - F9
@@ -349,3 +349,6 @@ combos:
   k: Sniper
 - p: [10, 30]
   k: '&num_word 2'
+- p: [11, 12]
+  k: Sniper
+  l: [Mouse]
