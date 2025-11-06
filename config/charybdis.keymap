@@ -234,7 +234,7 @@
     };
 
     zip_xy_to_scroll_mapper: zip_xy_to_scroll_mapper {
-        compatible = "zmk,input-processor-zip-scroll";
+        compatible = "zmk,input-processor-code-mapper";
         #input-processor-cells = <0>;
     };
 
