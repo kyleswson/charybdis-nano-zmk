@@ -33,7 +33,7 @@ layers:
   - {t: /, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:backspace$$', h: Num}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Symbol}
-  - {t: '&mid_bracket', h: '&num_word 2 4'}
+  - {t: '&mid_bracket 2', h: '&num_word 4'}
   - {t: '$$mdi:keyboard-return$$', h: Symbol}
   - {t: '$$mdi:keyboard-space$$', h: Num}
   Navigation:
