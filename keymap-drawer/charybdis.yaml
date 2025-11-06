@@ -149,8 +149,8 @@ layers:
   - F7
   - F8
   - F9
-  - {h: BT CLR}
-  - {h: BT CLR}
+  - '&bt_reset BT_CLR'
+  - '&bt_reset BT_CLR'
   - F7
   - F8
   - F9
