@@ -325,7 +325,7 @@
         Function {
             label = "Function";
             bindings = <
-  &kp F12  &kp F7  &kp F8  &kp F9  &bt_reset BT_CLR 0    &bt_reset BT_CLR 0  &kp F7  &kp F8  &kp F9  &kp F12
+  &kp F12  &kp F7  &kp F8  &kp F9  &bt_reset BT_CLR      &bt_reset BT_CLR  &kp F7  &kp F8  &kp F9  &kp F12
   &kp F11  &kp F4  &kp F5  &kp F6  &bt BT_NXT            &bt BT_NXT          &kp F4  &kp F5  &kp F6  &kp F11
   &kp F10  &kp F1  &kp F2  &kp F3  &bt BT_PRV            &bt BT_PRV          &kp F1  &kp F2  &kp F3  &kp F10
                    &trans  &trans  &trans                &trans              &trans
