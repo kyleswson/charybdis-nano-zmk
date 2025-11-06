@@ -20,7 +20,7 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '''', h: Navigation}
   - {t: Z, h: LEFT GUI}
   - X
   - C
@@ -30,12 +30,12 @@ layers:
   - M
   - '&comma_semicolon'
   - '&period_colon'
-  - /
+  - {t: /, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:backspace$$', h: Num}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Symbol}
   - {t: Function, h: sticky}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: Symbol}
+  - {t: '$$mdi:keyboard-return$$', h: Symbol}
+  - {t: '$$mdi:keyboard-space$$', h: Num}
   Navigation:
   - $$mdi:keyboard-esc$$
   - Ctl+$$mdi:arrow-left-bold$$
@@ -138,7 +138,7 @@ layers:
   - {t: ▽, type: trans}
   - '&right_bracket'
   - {t: ▽, type: trans}
-  - ''''
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
