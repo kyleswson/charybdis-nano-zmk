@@ -4,7 +4,9 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
+        zmk,underglow = &led_strip;
     }; 
+
 
     vbatt: vbatt {
 	compatible = "zmk,battery-nrf-vddh";
@@ -49,3 +51,5 @@
             ;
     };
 };
+
+
