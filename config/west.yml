@@ -9,13 +9,13 @@ manifest:
   projects:
     - name: zmk
       remote: urob
-      revision: main
+      revision: v0.3.0
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: inorichi
       revision: main
     - name: zmk-auto-layer
       remote: urob
-      revision: main # set to same version as zmk above
+      revision: v0.3.0 # set to same version as zmk above
   self:
     path: config
