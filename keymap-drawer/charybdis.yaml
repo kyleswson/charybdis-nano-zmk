@@ -408,18 +408,6 @@ combos:
   l: [Base, Mouse, Sniper]
 - p: [10, 30]
   k: '&num_word 2'
-- p: [13, 31]
-  k: '&Annyeong'
-  l: [Base, Mouse]
-- p: [14, 31]
-  k: {t: '&mchp', h: '&la_account'}
-  l: [Base, Mouse]
-- p: [4, 31]
-  k: '&kakao'
-  l: [Base, Mouse]
-- p: [24, 31]
-  k: '&dhl'
-  l: [Base, Mouse]
 - p: [31, 34]
   k: {t: Function, h: sticky}
 - p: [31, 32]
